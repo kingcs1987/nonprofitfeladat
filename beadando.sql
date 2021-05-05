@@ -32,14 +32,14 @@ INSERT INTO `felhasznalok` (`id`,`csaladi_nev`,`uto_nev`,`bejelentkezes`,`jelszo
   `id` int(10) unsigned NOT NULL auto_increment,
   `nev` varchar(40) NOT NULL default '',
   `email` varchar(45) NOT NULL default '',
-  `üzenet` varchar(1000) NOT NULL default '',
+  `szoveg` varchar(1000) NOT NULL default '',
 
   PRIMARY KEY  (`id`)
 )
 ENGINE = MYISAM
 CHARACTER SET utf8 COLLATE utf8_general_ci;
 
-INSERT INTO `kapcsolat` (`id`,`nev`,`email`,`üzenet`) VALUES 
+INSERT INTO `kapcsolat` (`id`,`nev`,`email`,`szoveg`) VALUES 
  (1,'Családi_1','Utónév_1','Login1',sha1('login1')),
  
 
